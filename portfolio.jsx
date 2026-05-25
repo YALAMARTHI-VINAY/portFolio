@@ -145,7 +145,7 @@ function Nav({ active, onContact, theme, onToggleTheme }) {
     { id: "education", label: "Education" },
     { id: "featured", label: "Featured" },
     { id: "projects", label: "Projects" },
-    { id: "courses", label: "Certs & Orgs" },
+    { id: "courses", label: "Community" },
     { id: "contact", label: "Contact" }
   ];
   return (
@@ -197,13 +197,13 @@ function Hero({ onAvatarClick, onLiveClick, avatarFx, theme }) {
         <div className="avatar-card">
           <div className={`avatar-frame ${avatarFx}`} onClick={onAvatarClick}>
             <img
-              src="assets/avatar.jpg"
+              src={theme === "dark" ? "assets/avatar-dark.jpg" : "assets/avatar.jpg"}
               alt="Vinay Sanyasi Setty — pixel avatar"
               className="avatar-img shown"
             />
           </div>
           <div className="caption">
-            <span>// avatar.jpg · pixel-art</span>
+            <span>pixel-art</span>
             <span className="live">● online</span>
           </div>
         </div>
@@ -245,10 +245,10 @@ function About() {
         </div>
         <div className="about-grid reveal">
           <div className="about-side">
-            <div className="row"><span className="k">Focus</span><span className="v">AI · Multi-Agents · Full-Stack</span></div>
-            <div className="row"><span className="k">Stack</span><span className="v">Python · React · FastAPI</span></div>
+            <div className="row"><span className="k">Focus</span><span className="v">AI · Blockchain · Full-Stack</span></div>
+            <div className="row"><span className="k">Stack</span><span className="v">Python · Next.js · Solidity</span></div>
             <div className="row"><span className="k">Studied</span><span className="v">Computer Science (B.Tech)</span></div>
-            <div className="row"><span className="k">Lives in</span><span className="v">Visakhapatnam, Tamil Nadu</span></div>
+            <div className="row"><span className="k">Lives in</span><span className="v">Visakhapatnam, Andhra Pradesh</span></div>
             <div className="row"><span className="k">Available</span><span className="v">Prototypes & roles</span></div>
           </div>
           <div className="body">
@@ -737,9 +737,9 @@ function App() {
           "[ok] elevated privileges granted",
           "",
           "user      : vinay.yalamarthi",
-          "role      : AI & Full-Stack Engineer",
-          "stack     : Python · LangGraph · React · FastAPI",
-          "specialty : RAG workflows · GenAI agents · scalable systems",
+          "role      : AI, Blockchain & Full-Stack Engineer",
+          "stack     : Python · LangGraph · Solidity · React · Next.js",
+          "specialty : RAG workflows · GenAI agents · Smart Contracts · scalable systems",
           "fun_fact  : 100% SSC aggregate school score",
           "",
           "$ tip:  you found one. there are [5] gems total."
@@ -808,6 +808,7 @@ function App() {
       "I'm always interested in:",
       "  · conversational security copilots (LangGraph)",
       "  · LLM pipeline evaluations (RAG vs fine-tuning)",
+      "  · decentralized applications (Web3 / Solidity / Smart Contracts)",
       "  · full-stack dashboard optimizations",
       "  · rapid prototyping and hackathons",
       "",

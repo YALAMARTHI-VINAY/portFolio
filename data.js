@@ -1,23 +1,23 @@
 // Portfolio data — edit any of this freely; the UI reads from these constants.
 window.PORTFOLIO = {
   name: "Vinay Yalamarthi Setty",
-  role: "AI & Full-Stack Engineer",
-  tagline: "Specializing in AI/ML, GenAI, and full-stack development, building scalable intelligent systems with LLMs and real-time pipelines",
+  role: "AI, Blockchain & Full-Stack Engineer",
+  tagline: "Specializing in AI/ML, GenAI, Blockchain, and full-stack development, building decentralized platforms, smart contracts, and intelligent systems",
   location: "Visakhapatnam, India",
 
   about: [
-    "I’m a Computer Science graduate from Vellore Institute of Technology, specializing in AI/ML, GenAI, and full-stack development. I have experience building scalable intelligent systems using LLMs, multi-agent frameworks, and real-time data pipelines.",
-    "Passionate about solving real-world problems through rapid prototyping, automation, and human-centered AI solutions. I focus on bridging the gap between sophisticated ML backends and intuitive, high-performance user interfaces."
+    "I’m a Computer Science graduate from Vellore Institute of Technology, specializing in AI/ML, GenAI, Blockchain, and full-stack development. I have experience building decentralized applications, Ethereum smart contracts, scalable intelligent systems using LLMs, and real-time data pipelines.",
+    "Passionate about solving real-world problems through rapid prototyping, automation, and human-centered AI solutions. I focus on bridging the gap between sophisticated ML/Web3 backends and intuitive, high-performance user interfaces."
   ],
 
   skills: [
-    "Python", "Java", "JavaScript", "SQL",
+    "Python", "Java", "JavaScript", "SQL", "Solidity",
     "LangChain", "LangGraph", "RAG", "Prompt Engineering", "NLP", 
     "TensorFlow", "PyTorch", "Scikit-learn",
-    "React.js", "Next.js", "FastAPI", "Node.js", "REST APIs",
-    "MySQL", "PostgreSQL", "Firebase", "Vector Databases",
+    "React.js", "Next.js", "FastAPI", "Node.js", "REST APIs", "Web3.js", "Hardhat",
+    "MySQL", "PostgreSQL", "Firebase", "Vector Databases", "Drizzle ORM",
     "Git", "GitHub", "Postman", "Streamlit", "Microsoft Defender for Cloud",
-    "Data Structures & Algorithms", "OOPs", "DBMS", "System Design", "API Integration"
+    "Data Structures & Algorithms", "OOPs", "DBMS", "System Design", "API Integration", "Blockchain", "Ethereum"
   ],
 
   languages: [
@@ -73,6 +73,18 @@ window.PORTFOLIO = {
 
   featured: [
     {
+      title: "FitToken",
+      year: "2026",
+      sponsor: "Crypto-Fitness Incentive Platform",
+      blurb: "A decentralized application enabling automated fitness rewards, tracking activity for 100+ simulated users and distributing tokens securely.",
+      bullets: [
+        "Engineered a decentralized application enabling automated fitness rewards, tracking activity for 100+ simulated users.",
+        "Developed and deployed Ethereum smart contracts in Solidity to automate token distribution, ensuring 100% accuracy in reward allocation.",
+        "Integrated blockchain backend with React frontend using Web3.js, enabling real-time reward updates and improving simulated engagement metrics."
+      ],
+      stack: ["Solidity", "Hardhat", "Web3.js", "Node.js", "React", "Ethereum", "Blockchain"]
+    },
+    {
       title: "TARA",
       year: "2025",
       sponsor: "Threat Analysis and Response Assistant",
@@ -111,6 +123,18 @@ window.PORTFOLIO = {
   ],
 
   projects: [
+    {
+      title: "ProLingo",
+      year: "2026",
+      blurb: "SaaS gamified learning platform built with Next.js 14 and Drizzle ORM. Features progress dashboards, save/resume flows, badges, Clerk auth, and Stripe payments.",
+      stack: ["Next.js 14", "React", "Tailwind CSS", "ShadCN UI", "PostgreSQL", "Drizzle ORM", "Clerk", "Stripe"]
+    },
+    {
+      title: "Personal Expense Tracker",
+      year: "2025",
+      blurb: "Persistent financial tracker built using vanilla JavaScript and LocalStorage. Integrates Chart.js for real-time data visualization and supports CSV exports.",
+      stack: ["JavaScript", "LocalStorage", "Chart.js", "CSV Export"]
+    },
     {
       title: "Caterpillar Challenge System",
       year: "2025",
